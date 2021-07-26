@@ -23,21 +23,21 @@ public class ConditionalPractice {
 //		(합격 조건 : 세 과목의 점수가 각각 40 점 이상이면서 평균이 60 점 이상일 경우
 //		합격했을 경우 과목 별 점수와 합계 , 평균 , 축하합니다 , 합격입니다 를 출력하고
 //		불합격인 경우에는 불합격입니다 를 출력하세요.
-		/*
-		 * System.out.println("국어점수를 입력하세요."); int han =
-		 * Integer.parseInt(sc.nextLine()); System.out.println("수학점수를 입력하세요."); int math
-		 * = Integer.parseInt(sc.nextLine()); System.out.println("영어점수를 입력하세요."); int
-		 * eng = Integer.parseInt(sc.nextLine());
-		 * 
-		 * int sum = (han + math + eng); int avg = (sum / 3); if (han >= 40 && math >=
-		 * 40 && eng >= 40 && avg >= 60) { System.out.println("국어: " + han);
-		 * System.out.println("영어: " + eng); System.out.println("수학: " + math);
-		 * System.out.println("합계: " + sum); System.out.println("평균: " + avg);
-		 * System.out.println("축하합니다,합격입니다!.");
-		 * 
-		 * } else { System.out.println("국어: " + han); System.out.println("영어: " + eng);
-		 * System.out.println("수학: " + math); System.out.println("불합격입니다."); }
-		 */
+		
+//		  System.out.println("국어점수를 입력하세요."); int han =
+//		  Integer.parseInt(sc.nextLine()); System.out.println("수학점수를 입력하세요."); int math
+//		  = Integer.parseInt(sc.nextLine()); System.out.println("영어점수를 입력하세요."); int
+//		  eng = Integer.parseInt(sc.nextLine());
+//		  
+//		  int sum = (han + math + eng); int avg = (sum / 3); if (han >= 40 && math >=
+//		  40 && eng >= 40 && avg >= 60) { System.out.println("국어: " + han);
+//		  System.out.println("영어: " + eng); System.out.println("수학: " + math);
+//		  System.out.println("합계: " + sum); System.out.println("평균: " + avg);
+//		  System.out.println("축하합니다,합격입니다!.");
+//		  
+//		  } else { System.out.println("국어: " + han); System.out.println("영어: " + eng);
+//		  System.out.println("수학: " + math); System.out.println("불합격입니다."); }
+//		 
 //		4-5아이디, 비밀번호를 정해두고 로그인 기능을 작성하세요 로그인성공 시 로그인 성공 ,
 //		아이디가틀렸을 시 아이디가 틀렸습니다 비밀번호가 틀렸을 시 비밀번호가 틀렸습니다 를 출력하세요
 
@@ -63,12 +63,10 @@ public class ConditionalPractice {
 		
 	}
 	
-	/**
-	 * 4-2 키보드로 정수를 입력 받은 정수가 양수이면서 짝수일 때만 짝수다 를 출력하고 짝수가 아니면 홀수다 를 출력하세요 양수가 아니면
-	 * 양수만 입력해주세요 를 출력
-	 * @param num
-	 * @return String
-	 */
+
+	  @param num
+	  @return String
+	 
 	public String practice1(int num) {
 		String answer = "";
 		
@@ -83,6 +81,8 @@ public class ConditionalPractice {
 		}
 		
 		return answer;
+	
+	 
 	}
 	
 }
