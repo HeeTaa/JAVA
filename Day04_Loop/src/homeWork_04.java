@@ -57,6 +57,7 @@ public class homeWork_04 {
 //		}
 
 //		1부터 사용자에게 입력 받은 수까지의 정수들의 합을 출력하세요
+
 //		int sum = 0;		
 //		
 //			System.out.print("정수를 하나 입력하세요 :");
@@ -186,7 +187,7 @@ public class homeWork_04 {
 //
 //			}
 //		}
-		
+
 //		다음과 같은 실행 예제를 구현하세요
 //		ex.
 //		정수 입력 : 4
@@ -194,7 +195,7 @@ public class homeWork_04 {
 //		**
 //		***
 //		****
-		
+
 //		System.out.println("정수를 입력하세요");
 //		int num = Integer.parseInt(sc.nextLine());
 //		
@@ -204,7 +205,7 @@ public class homeWork_04 {
 //			}
 //			System.out.println();
 //		}
-		
+
 //		다음과 같은 실행 예제를 구현하세요
 //		ex.
 //		정수입력 : 4
@@ -221,5 +222,72 @@ public class homeWork_04 {
 //			}
 //			System.out.println();
 //		}
+
+//		컴퓨터와 가위바위보 게임하기.
+
+//		int min = 1;
+//		int max = 3;
+//		int ran = (int) (Math.random() * (max - min + 1)) + min;
+//		String rs = "";
+//		System.out.println(ran);
+//		switch (ran) {
+//		case 1:
+//			rs = "가위";
+//			break;
+//		case 2:
+//			rs = "바위";
+//			break;
+//		case 3:
+//			rs = "보";
+//			break;
+//		}
+//
+//		System.out.println("==== 가위 바위 보 게임 ====");
+//		System.out.println("아래의 숫자 중 하나를 선택하세요.");
+//		System.out.println("1.가위 2.바위 3.보");
+//
+//		int user = Integer.parseInt(sc.nextLine());
+//
+//		if (user == 1) {
+//			System.out.println("컴퓨터: " + rs + " 사용자: 가위");
+//			switch (ran) {
+//			case 1:
+//				System.out.println("비겼습니다.");
+//				break;
+//			case 2:
+//				System.out.println("졌습니다.");
+//				break;
+//			case 3:
+//				System.out.println("이겼습니다.");
+//				break;
+//			}
+//		} else if (user == 2) {
+//			System.out.println("컴퓨터: " + rs + " 사용자: 바위");
+//			switch (ran) {
+//			case 1:
+//				System.out.println("이겼습니다.");
+//				break;
+//			case 2:
+//				System.out.println("비겼습니다.");
+//				break;
+//			case 3:
+//				System.out.println("졌습니다.");
+//				break;
+//			}
+//		} else if (user == 3) {
+//			System.out.println("컴퓨터: " + rs + " 사용자: 보");
+//			switch (ran) {
+//			case 1:
+//				System.out.println("졌습니다.");
+//				break;
+//			case 2:
+//				System.out.println("이겼습니다.");
+//				break;
+//			case 3:
+//				System.out.println("비겼습니다.");
+//				break;
+//			}
+//		}
+
 	}
 }
