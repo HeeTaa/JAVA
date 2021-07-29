@@ -16,8 +16,8 @@ public class Swich02_Exam {
 			System.out.println("30대입니다.");
 		} else if (age >= 40 && age <= 49) {
 			System.out.println("40대입니다.");
-		}
+			}
        
 	}
-	continue;
+	
 }

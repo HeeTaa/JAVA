@@ -3,7 +3,6 @@ public class Exam01_Intro {
 	public static void main(String[] args) {
 
 		// 배열 : 같은 자료형의 데이터들로 이루어진 집합
-		// int[] arr = new int[5];
 
 //		   int[] arr = new int[3]; 				// 3가지 모두 같은동작
 // 		   int[] arr = new int[] {0, 0, 0}; 	// 3가지 모두 같은동작

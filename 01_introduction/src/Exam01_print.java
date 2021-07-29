@@ -5,7 +5,6 @@ public class Exam01_print {
 		String a = "dd";
 		
 		ConditionalPractice c = new ConditionalPractice();
-		c.practice1(0);
 		
 		System.out.println("A A¿‘¥œ¥Ÿ.");
 		System.out.println('A');
