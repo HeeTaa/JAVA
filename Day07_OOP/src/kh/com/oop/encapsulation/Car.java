@@ -16,11 +16,25 @@ public class Car {
 	private int price;
 	
 	//getter / setter // 우클릭 -> source -> getter setter 으로 자동으로 생성가능
-	public void setBrand(String brand) {			   //brand라는 매개변수로 받아서
+	public void setBrand(String brand) {	//매개변수명은 멤버변수명과 똑같이해주는것이 좋다.		   
+		if(brand.equals("Kia")) {    //조건을 넣어줘서 다른 데이터값을 제한한다.
 		this.brand = brand; //this : 자기자신을 참조하는   //자기자신 brand변수에 매개변수를 넣어준다 
+		}
 	}
 	public String getBrand() {
 		return this.brand;
+	}	
+	public int getSpeed() {
+		return speed;
+	}
+	public void setSpeed(int speed) {
+		this.speed = speed;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	void speedUp() {

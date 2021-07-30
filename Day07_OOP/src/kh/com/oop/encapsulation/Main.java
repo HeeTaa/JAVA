@@ -7,12 +7,12 @@ public class Main {
 		Car morning = new Car();
 
 		avante.setBrand("Hyundai");
-		avante.price = 50;
-		avante.speed = 0;
+		avante.setPrice(5000000);
+		avante.setSpeed(0); 
 
-		morning.brand = "Kia";
-		morning.price = 50;
-		morning.speed = 0;
+		morning.setBrand("Kia");
+		morning.setPrice(5000000);
+		morning.setSpeed(0);
 
 	}
 }
