@@ -13,35 +13,26 @@ public class JukeBox {
 
 		Scanner sc = new Scanner(System.in);
 		int num = Integer.parseInt(sc.nextLine());
+		sc.close(); // 사용하고 닫아주기
+		FileInputStream fis = null;
 
-		switch (num) {
-		case 1:
-			try {
-				FileInputStream fis = new FileInputStream("바라만 본다.mp3");
-				Player PlayMP3 = new Player(fis);
-				PlayMP3.play();
-			} catch (Exception e) {
-				e.printStackTrace();
+		try {
+			switch (num) {
+			case 1:
+				fis = new FileInputStream("바라만 본다.mp3");
+				break;
+			case 2:
+				fis = new FileInputStream("신호등.mp3");
+				break;
+			case 3:
+				fis = new FileInputStream("Next Level.mp3");
+				break;
 			}
-			break;
-		case 2:
-			try {
-				FileInputStream fis = new FileInputStream("신호등.mp3");
-				Player PlayMP3 = new Player(fis);
-				PlayMP3.play();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			break;
-		case 3:
-			try {
-				FileInputStream fis = new FileInputStream("Next Level.mp3");
-				Player PlayMP3 = new Player(fis);
-				PlayMP3.play();
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			break;
+			Player PlayMP3 = new Player(fis);
+			PlayMP3.play();
+			fis.close();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
 	}
