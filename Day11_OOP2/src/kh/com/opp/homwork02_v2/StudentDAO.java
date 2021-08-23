@@ -5,14 +5,15 @@ import java.util.Arrays;
 import kh.com.opp.homework_02_v1.Student;
 
 public class StudentDAO {
-	private StudentDTO[] student = new StudentDTO[5];
+	StudentDTO[] student = new StudentDTO[5];
 	private int index = 0;
-
+	
+	
 	public void add(StudentDTO std) {
 		student[index++] = std;
 	}
 
-	public void increaseCapacity() {
+	public void increase() {
 		if (index == student.length) {
 			student = Arrays.copyOf(student, student.length * 2);
 		}
