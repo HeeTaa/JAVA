@@ -7,14 +7,6 @@ import kh.com.opp.homework_02_v1.Student;
 
 public class Main {
 	public static void main(String[] args) {
-		StudentDTO[] student = new StudentDTO[5];
-		
-		for(int i = 0 ; i <=student.length ; i ++) {
-			System.out.println(student[i].getName());
-		}
-		
-		
-		
 		
 		StudentDAO stDAO = new StudentDAO();
 		Scanner sc = new Scanner(System.in);

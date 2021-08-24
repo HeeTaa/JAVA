@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class StudentDAO {
 	private ArrayList<StudentDTO> student = new ArrayList<>();
 
-	public void add(StudentDTO student) {
+	public void sAdd(StudentDTO student) {
 		this.student.add(student);
 	}
 

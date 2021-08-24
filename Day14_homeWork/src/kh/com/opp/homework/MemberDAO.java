@@ -4,19 +4,7 @@ import java.util.ArrayList;
 
 public class MemberDAO {
 	ArrayList<MemberDTO> mDTO = new ArrayList<>();
-	
-	public void test() {
-		mDTO.add(new Basic("aa","aa","aa",3));
-		mDTO.add(new Basic("cc","bb","cc",3));
-		mDTO.add(new Basic("cc","cc","cc",3));
-		try {
-		for(int i = 0 ; i <= mDTO.size();i++) {
-			System.out.println(mDTO.get(i));
-		}
-		}catch(Exception e) {
-		   return;
-		}
-	}
+		
 	public void mAdd(MemberDTO mDTO) {
 		this.mDTO.add(mDTO);
 	}

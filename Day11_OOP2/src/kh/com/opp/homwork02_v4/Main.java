@@ -67,7 +67,7 @@ public class Main {
 				String name = sc.nextLine();
 				int age = exInt("age");
 				char gender = exChar();
-				stDAO.add(new StudentDTO(no, name, age, gender));
+				stDAO.sAdd(new StudentDTO(no, name, age, gender));
 				System.out.println("저장되었습니다.");
 				break;
 

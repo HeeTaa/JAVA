@@ -1,4 +1,4 @@
-package kh.com.opp.homework;
+package kh.com.opp.homeworkv3;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -35,7 +35,6 @@ public class Main {
 		MemberDAO mDAO = new MemberDAO();
 		String id = "";
 		String nickname = "";
-		
 		while (true) {
 			System.out.println("*** Netflix 회원 관리 시스템 ***");
 			System.out.println("1.신규 회원 등록");
@@ -74,9 +73,7 @@ public class Main {
 					} else
 						break;
 				}
-
-				System.out.print("신규 회원 가입일(210505 형식으로) : ");
-				String signup_date = sc.nextLine();
+				String signup_date = mDAO.getDate(System.currentTimeMillis());
 				int point = exInt("npoint");
 
 				if (inMenu1 == 1) {
@@ -94,10 +91,10 @@ public class Main {
 				break;
 
 			case 2:
-				System.out.println("ID\t등급\t닉네임\t가입일\t포인트");
+				System.out.println("ID\t등급\t닉네임\t포인트\t가입일");
 				ArrayList<MemberDTO> mDTO = mDAO.mPrint();
-				for (MemberDTO std : mDTO) {
-					System.out.println(std);
+				for (MemberDTO m : mDTO) {
+					System.out.println(m);
 				}
 				break;
 
@@ -130,8 +127,8 @@ public class Main {
 			case 4:
 				System.out.println("ID\t등급\t닉네임\t가입일\t포인트");
 
-				for (MemberDTO std : mDAO.mPrint()) {
-					System.out.println(std);
+				for (MemberDTO m : mDAO.mPrint()) {
+					System.out.println(m);
 				}
 				System.out.print("수정 할 회원의 ID 입력 : ");
 				id = sc.nextLine();
@@ -145,8 +142,8 @@ public class Main {
 			case 5:
 				System.out.println("ID\t등급\t닉네임\t가입일\t포인트");
 
-				for (MemberDTO std : mDAO.mPrint()) {
-					System.out.println(std);
+				for (MemberDTO m : mDAO.mPrint()) {
+					System.out.println(m);
 				}
 				System.out.print("삭제 할 회원의 ID 입력 : ");
 				id = sc.nextLine();

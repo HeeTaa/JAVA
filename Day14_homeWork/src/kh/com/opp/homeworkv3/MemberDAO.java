@@ -1,10 +1,11 @@
-package kh.com.opp.homeworkv2;
+package kh.com.opp.homeworkv3;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class MemberDAO {
@@ -42,6 +43,7 @@ public class MemberDAO {
 			e.printStackTrace();
 		}
 	}
+
 
 	public ArrayList<MemberDTO> mPrint() {
 
@@ -115,5 +117,10 @@ public class MemberDAO {
 			}
 		}
 
+	}
+	
+	public String getDate(long signup_date) {
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+		return sdf.format(signup_date);
 	}
 }
